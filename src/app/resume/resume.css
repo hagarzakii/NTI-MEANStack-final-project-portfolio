@@ -1,0 +1,62 @@
+/* Resume specific styles */
+.resume-accordion {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  padding: 1rem 1.25rem;
+  background-color: #f8f9fa;
+  border-radius: 0.25rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 50px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-badge {
+  position: absolute;
+  left: -25px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  border: 3px solid white;
+}
+
+.timeline-content {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.certification-card {
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.skill-badge {
+  background-color: #e9ecef;
+  padding: 0.35rem 0.75rem;
+  border-radius: 50rem;
+  font-size: 0.875rem;
+}
+
+/* Bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css");
