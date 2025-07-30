@@ -13,6 +13,7 @@ import { ProjectsService } from '../_services/projects.service';
 })
 export class Portfolio implements OnInit {
   projects = {} as Project[];
+  expandedProjects: boolean[] = [];
 
   constructor(
     private titleService: Title,
@@ -20,7 +21,14 @@ export class Portfolio implements OnInit {
   ) {
     this.titleService.setTitle('Hagar Hashesh-Portfolio');
   }
+
   ngOnInit(): void {
     this.projects = this.projectService.GetProjects();
+    // Initialize expanded state for all projects as false
+    this.expandedProjects = new Array(this.projects.length).fill(false);
+  }
+
+  toggleProjectDetails(index: number): void {
+    this.expandedProjects[index] = !this.expandedProjects[index];
   }
 }

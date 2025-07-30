@@ -1,11 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Project } from '../_models/project';
-import {
-  NgbModalRef,
-  NgbModal,
-  NgbModalOptions,
-} from '@ng-bootstrap/ng-bootstrap';
-import { ProjectModal } from '../project-modal/project-modal';
 
 @Component({
   selector: 'app-project-card',
@@ -15,17 +9,12 @@ import { ProjectModal } from '../project-modal/project-modal';
 })
 export class ProjectCard {
   @Input() project = {} as Project;
-  bsModalRef?: NgbModalRef;
+  @Input() projectIndex: number = 0;
+  @Output() toggleDetails = new EventEmitter<number>();
 
-  constructor(private modalService: NgbModal) {}
+  constructor() {}
 
-  openProjectModal() {
-    const modalOptions: NgbModalOptions = {
-      size: 'lg',
-      centered: true,
-      windowClass: 'custom-modal-class',
-    };
-    const modalRef = this.modalService.open(ProjectModal, modalOptions);
-    modalRef.componentInstance.project = this.project;
+  onToggleDetails(): void {
+    this.toggleDetails.emit(this.projectIndex);
   }
 }

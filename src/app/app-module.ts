@@ -19,8 +19,6 @@ import { Portfolio } from './portfolio/portfolio';
 import { Resume } from './resume/resume';
 import { Contact } from './contact/contact';
 import { ProjectCard } from './project-card/project-card';
-import { ProjectModal } from './project-modal/project-modal';
-import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -32,15 +30,8 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     Resume,
     Contact,
     ProjectCard,
-    ProjectModal,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    NgbCarouselModule,
-    NgbAccordionModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, NgbAccordionModule],
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
