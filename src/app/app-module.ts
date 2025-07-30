@@ -15,7 +15,7 @@ import {
 import { Header } from './header/header';
 import { Nav } from './nav/nav';
 import { Home } from './home/home';
-import { Portfolio } from './portfolio/portfolio';
+import { Projects } from './projects/projects';
 import { Resume } from './resume/resume';
 import { Contact } from './contact/contact';
 import { ProjectCard } from './project-card/project-card';
@@ -26,7 +26,7 @@ import { ProjectCard } from './project-card/project-card';
     Header,
     Nav,
     Home,
-    Portfolio,
+    Projects,
     Resume,
     Contact,
     ProjectCard,

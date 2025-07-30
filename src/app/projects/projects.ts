@@ -5,13 +5,13 @@ import { Tag } from '../_models/tag';
 import { ProjectsService } from '../_services/projects.service';
 
 @Component({
-  selector: 'app-portfolio',
+  selector: 'app-projects',
   standalone: false,
-  templateUrl: './portfolio.html',
-  styleUrl: './portfolio.css',
+  templateUrl: './projects.html',
+  styleUrl: './projects.css',
   providers: [ProjectsService],
 })
-export class Portfolio implements OnInit {
+export class Projects implements OnInit {
   projects = {} as Project[];
   expandedProjects: boolean[] = [];
 
@@ -19,7 +19,7 @@ export class Portfolio implements OnInit {
     private titleService: Title,
     private projectService: ProjectsService
   ) {
-    this.titleService.setTitle('Hagar Hashesh-Portfolio');
+    this.titleService.setTitle('Hagar Hashesh-Projects');
   }
 
   ngOnInit(): void {
