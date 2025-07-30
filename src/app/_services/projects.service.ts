@@ -9,87 +9,32 @@ export class ProjectsService {
   projects: Project[] = [
     {
       id: 0,
-      name: 'Stock Market Analyzer',
-      pictures: [
-        '../../assets/1.jpeg',
-        '../../assets/2.jpeg',
-        '../../assets/3.jpeg',
-      ],
-      projectLink: '',
-      summary: 'Python project that analyzes stock market data.',
+      name: 'Student Record System',
+      projectLink: 'https://github.com',
+      summary:
+        'A console-based student data management system using C programming and data structures',
       description:
-        'Developed a data analysis tool that processes historical stock data, calculates key metrics, and generates visual reports. Implemented pandas for data manipulation and matplotlib for visualization.',
-      tags: [Tag.PYTHON],
+        'Has features of add, delete, update, count and display student records also implements efficient ID-based data retrievaland focuses on deep understanding of memory management and algorithmic design.',
+      tags: [Tag.C],
     },
     {
       id: 1,
       name: 'Portfolio Website',
-      pictures: [
-        '../../assets/1.jpeg',
-        '../../assets/2.jpeg',
-        '../../assets/3.jpeg',
-      ],
-      projectLink: '',
+      projectLink: 'https://github.com',
       summary: 'Personal portfolio website built with Angular',
       description:
         'Designed and developed a responsive portfolio website showcasing my projects and skills. Implemented Angular components, routing, and responsive design with Bootstrap.',
-      tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.NODEJS],
+      tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
     },
     {
       id: 2,
-      name: 'E-commerce Platform',
-      pictures: [
-        '../../assets/1.jpeg',
-        '../../assets/2.jpeg',
-        '../../assets/3.jpeg',
-      ],
-      projectLink: '',
-      summary: 'Fullstack e-commerce application with React and ASP.NET',
+      name: 'Payment Application',
+      projectLink: 'https://github.com',
+      summary:
+        'Simulates a secure card payment workflow with account and transaction management.',
       description:
-        '"Built a complete e-commerce solution with product listings, shopping cart, and checkout system. Developed RESTful API with ASP.NET Core and implemented frontend with React and Redux.',
-      tags: [Tag.REACT, Tag.CSHARP, Tag.ASPNET],
-    },
-    {
-      id: 3,
-      name: 'Weather API Service',
-      pictures: [
-        '../../assets/1.jpeg',
-        '../../assets/2.jpeg',
-        '../../assets/3.jpeg',
-      ],
-      projectLink: '',
-      summary: 'RESTful API for weather data aggregation',
-      description:
-        'Created a web API that aggregates weather data from multiple sources and provides a unified interface. Implemented authentication, rate limiting, and caching for better performance.',
-      tags: [Tag.CSHARP, Tag.ASPNET],
-    },
-    {
-      id: 4,
-      name: 'Price Tracker Extension',
-      pictures: [
-        '../../assets/1.jpeg',
-        '../../assets/2.jpeg',
-        '../../assets/3.jpeg',
-      ],
-      projectLink: '',
-      summary: 'Chrome extension for furniture price tracking',
-      description:
-        'Developed a browser extension that monitors furniture prices across multiple retailers. Implemented background scripts, content injection, and local storage for price history.',
-      tags: [Tag.JAVASCRIPT],
-    },
-    {
-      id: 5,
-      name: 'Train Tracker App',
-      pictures: [
-        '../../assets/1.jpeg',
-        '../../assets/2.jpeg',
-        '../../assets/3.jpeg',
-      ],
-      projectLink: '',
-      summary: 'Android application for train schedules',
-      description:
-        'Mobile app that provides real-time train schedules and notifications. Implemented using Java with Android Studio, featuring location services and push notifications.',
-      tags: [Tag.JAVA],
+        'Handles Authentication, validation, transaction logging, and balance updates used file handling, and modular code structure also emulates a real-world financial system with precise logic flow.',
+      tags: [Tag.C],
     },
   ];
 

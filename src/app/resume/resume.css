@@ -1,4 +1,3 @@
-/* Resume specific styles */
 .resume-accordion {
   max-width: 900px;
   margin: 0 auto;
@@ -58,5 +57,22 @@
   font-size: 0.875rem;
 }
 
-/* Bootstrap icons */
+.brown-btn {
+  margin-top: 20px;
+  background-color: #6d4c41 !important;
+  color: #fff !important;
+  border: none;
+}
+.brown-btn:hover,
+.brown-btn:focus {
+  background-color: #4e342e !important;
+  color: #fff !important;
+}
+
+.container {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* bootstrap icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css");

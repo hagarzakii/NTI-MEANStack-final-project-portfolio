@@ -1,6 +1,6 @@
 <div class="container text-center">
-  <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">
-    <i class="bi bi-download me-2"></i> Download PDF Resume
+  <button (click)="DownloadFile()" class="btn brown-btn mb-5 shadow border">
+    <i class="bi bi-download me-2"></i> Download Resume
   </button>
 
   <div ngbAccordion class="resume-accordion">
@@ -8,7 +8,7 @@
     <div ngbAccordionItem class="mb-3">
       <h2 ngbAccordionHeader>
         <button ngbAccordionButton class="accordion-header">
-          <i class="bi bi-briefcase me-2"></i> Work Experience
+          <i class="bi bi-briefcase me-2"></i>Experience & Volunteering
         </button>
       </h2>
       <div ngbAccordionCollapse>
@@ -18,22 +18,11 @@
               <div class="timeline-item">
                 <div class="timeline-badge"></div>
                 <div class="timeline-content p-4">
-                  <h4>Web Developer</h4>
-                  <h5 class="text-primary">Digital Creations</h5>
-                  <p class="text-muted">Mar 2023 - Dec 2024</p>
-                  <ul>
-                    <li>
-                      Developed 15+ responsive websites using Angular and
-                      Bootstrap
-                    </li>
-                    <li>
-                      Reduced page load time by 30% through performance
-                      optimization
-                    </li>
-                    <li>
-                      Collaborated with UX team to implement design systems
-                    </li>
-                  </ul>
+                  <h4>IEEE Mansoura Student Branch</h4>
+                  <h5 class="text-primary">Logistics Volunteer</h5>
+                  <p class="text-muted">Jan 2023 - Oct 2023</p>
+                  <h5 class="text-primary">Member Development Coordinator</h5>
+                  <p class="text-muted">Oct 2023 - Oct 2024</p>
                 </div>
               </div>
             </div>
@@ -56,7 +45,7 @@
               <h4>Faculty of Engineering</h4>
               <h5 class="text-primary">Mansoura University</h5>
               <p class="text-muted">2021 - present</p>
-              <p>Specialization in Electronics and Communication</p>
+              <p>Department of Electronics and Communication</p>
             </div>
           </ng-template>
         </div>
@@ -76,8 +65,20 @@
             <div class="row">
               <div class="col-md-6 mb-3">
                 <div class="certification-card p-3 h-100">
-                  <h5>Full Stack MEAN Certified Developer</h5>
-                  <p class="text-muted">NTI, 2025</p>
+                  <h5>Database Fundamentals</h5>
+                  <p class="text-muted">MaharaTech, Feb 2025</p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="certification-card p-3 h-100">
+                  <h5>Computer Network Fundamentals</h5>
+                  <p class="text-muted">MaharaTech, Mar 2025</p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="certification-card p-3 h-100">
+                  <h5>Mastering OOP Using C++</h5>
+                  <p class="text-muted">MaharaTech, Apr 2025</p>
                 </div>
               </div>
             </div>
@@ -98,29 +99,37 @@
           <ng-template>
             <div class="skills-container p-4">
               <div class="skill-category mb-4">
-                <h4 class="mb-3">Frontend</h4>
+                <h4 class="mb-3">Technical Skills</h4>
                 <div class="d-flex flex-wrap gap-2">
-                  <span class="skill-badge">Angular</span>
-                  <span class="skill-badge">TypeScript</span>
-                  <span class="skill-badge">HTML5/CSS3</span>
-                  <span class="skill-badge">Bootstrap</span>
+                  <span class="skill-badge">C</span>
+                  <span class="skill-badge">C++</span>
+                  <span class="skill-badge">HTML</span>
+                  <span class="skill-badge">CSS</span>
+                  <span class="skill-badge">JavaScript</span>
+                  <span class="skill-badge">SQL</span>
+                  <span class="skill-badge">SQLite3</span>
                 </div>
               </div>
 
               <div class="skill-category mb-4">
-                <h4 class="mb-3">Backend</h4>
+                <h4 class="mb-3">Soft Skills</h4>
                 <div class="d-flex flex-wrap gap-2">
-                  <span class="skill-badge">Node.js</span>
-                  <span class="skill-badge">Express</span>
-                  <span class="skill-badge">MongoDB</span>
+                  <span class="skill-badge">Problem Solving</span>
+                  <span class="skill-badge">Team Collaboration</span>
+                  <span class="skill-badge">Communication</span>
+                  <span class="skill-badge">Conflict Handling</span>
+                  <span class="skill-badge">Flexibilty</span>
                 </div>
               </div>
 
               <div class="skill-category">
-                <h4 class="mb-3">Other</h4>
+                <h4 class="mb-3">Concepts & Tools</h4>
                 <div class="d-flex flex-wrap gap-2">
                   <span class="skill-badge">Git</span>
                   <span class="skill-badge">GitHub</span>
+                  <span class="skill-badge">OOP</span>
+                  <span class="skill-badge">Datastructures & Algorithms</span>
+                  <span class="skill-badge">VS code</span>
                 </div>
               </div>
             </div>

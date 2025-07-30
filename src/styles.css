@@ -1,6 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: #f5ecd7;
+  color: #4e342e;
+}
+
+.main-content-with-nav {
+  margin-right: 180px;
+}
+
 .container {
   max-width: 1140px;
+  background: #fff8ef;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(78, 52, 46, 0.05);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a,
+.nav-link {
+  color: #6d4c41;
+}
+a:hover,
+.nav-link:hover {
+  color: #3e2723;
 }
 
 .tag {
@@ -10,6 +32,6 @@
   font-size: 14px;
   line-height: 30px;
   border-radius: 25px;
-  background-color: blue;
-  color: white;
+  background-color: #bcaaa4;
+  color: #fff;
 }

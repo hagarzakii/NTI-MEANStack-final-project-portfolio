@@ -24,7 +24,6 @@ export class Portfolio implements OnInit {
 
   ngOnInit(): void {
     this.projects = this.projectService.GetProjects();
-    // Initialize expanded state for all projects as false
     this.expandedProjects = new Array(this.projects.length).fill(false);
   }
 

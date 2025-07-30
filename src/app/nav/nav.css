@@ -1,1 +1,31 @@
+.vertical-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 180px;
+  background: #f5ecd7;
+  border-left: 2px solid #bcaaa4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  padding-top: 60px;
+}
 
+.vertical-navbar .nav {
+  width: 100%;
+}
+
+.vertical-navbar .nav-link {
+  text-align: center;
+  padding: 16px 0;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.vertical-navbar .nav-link:hover,
+.vertical-navbar .nav-link.text-dark {
+  background: #bcaaa4;
+  color: #fff !important;
+}
